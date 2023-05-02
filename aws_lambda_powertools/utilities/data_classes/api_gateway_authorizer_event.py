@@ -436,6 +436,7 @@ class APIGatewayAuthorizerResponse:
             parsed_arn.stage,
             context,
             usage_identifier_key,
+            parsed_arn.partition,
         )
 
     def _add_route(self, effect: str, http_method: str, resource: str, conditions: Optional[List[Dict]] = None):
